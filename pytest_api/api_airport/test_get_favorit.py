@@ -10,6 +10,7 @@ def test_get_fav_all():
     url = ('https://airportgap.dev-tester.com/api/favorites')
 
     response = requests.get(url, headers=auth)
+    print(response.text)
     assert response.status_code == 200
 
 def test_get_fav_id():
